@@ -2,6 +2,11 @@ name: app-web-deploy
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "src/app-web/**"
 
 permissions:
   id-token: write
