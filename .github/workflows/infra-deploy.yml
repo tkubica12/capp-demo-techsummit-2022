@@ -27,5 +27,5 @@ jobs:
       - name: 'Deploy infra'
         working-directory: ./bicep
         run: |
-          az bicep build -f ./main.bicep
-          az deployment group create -g capp-demo-techsummit -f ./main.json
+          az bicep build -f ./infra.bicep
+          az deployment group create -g capp-demo-techsummit -f ./infra.json
