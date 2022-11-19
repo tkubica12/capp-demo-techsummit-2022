@@ -27,8 +27,6 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Build and deploy Container App
-        env:
-          CA_GH_ACTION_DOCKERFILE_PATH: /home/runner/work/capp-demo-techsummit-2022/capp-demo-techsummit-2022/src/web/Dockerfile
         uses: azure/container-apps-deploy-action@v0
         with:
           appSourcePath: ${{ github.workspace }}/src/web/
@@ -36,4 +34,5 @@ jobs:
           containerAppEnvironment: cappdemotechsummit123
           containerAppName: app-web
           resourceGroup: capp-demo-techsummit
+          dockerfilePath: Dockerfile
           

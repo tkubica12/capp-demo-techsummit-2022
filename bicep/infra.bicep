@@ -8,6 +8,9 @@ resource acr 'Microsoft.ContainerRegistry/registries@2022-02-01-preview' = {
   sku: {
     name: 'Basic'
   }
+  properties: {
+    adminUserEnabled: true
+  }
 }
 
 // Azure Container Apps Environment
