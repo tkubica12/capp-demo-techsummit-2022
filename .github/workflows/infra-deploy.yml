@@ -31,3 +31,4 @@ jobs:
           resourceGroupName: capp-demo-techsummit
           template: ./bicep/infra.bicep
           parameters: name=cappdemotechsummit123
+          failOnStdErr: false
