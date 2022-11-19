@@ -30,4 +30,4 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           resourceGroupName: capp-demo-techsummit
           template: ./bicep/infra.bicep
-          parameters: name=capp-demo-techsummit123
+          parameters: name=cappdemotechsummit123
