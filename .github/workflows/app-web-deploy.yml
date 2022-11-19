@@ -31,6 +31,8 @@ jobs:
         with:
           appSourcePath: ${{ github.workspace }}/src/web/
           acrName: cappdemotechsummit123
+          acrPassword: ${{ secrets.ACR_PASSWORD }}
+          acrUsername: cappdemotechsummit123
           containerAppEnvironment: cappdemotechsummit123
           containerAppName: app-web
           resourceGroup: capp-demo-techsummit
