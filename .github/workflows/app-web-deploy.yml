@@ -30,6 +30,8 @@ jobs:
         uses: azure/container-apps-deploy-action@v0
         with:
           appSourcePath: ${{ github.workspace }}/src/web/
-          acrName: capp-demo-techsummit123
+          acrName: cappdemotechsummit123
+          containerAppEnvironment: cappdemotechsummit123
           containerAppName: app-web
           resourceGroup: capp-demo-techsummit
+          
